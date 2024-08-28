@@ -12,6 +12,7 @@ app.use(bodyParser.json());
 
 // Connect to MongoDB
 //here userdb is the name of the database
+//if it doesn't exist, it will be created
 mongoose.connect("mongodb://localhost:27017/userdb", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
