@@ -11,6 +11,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Connect to MongoDB
+//here userdb is the name of the database
 mongoose.connect("mongodb://localhost:27017/userdb", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
